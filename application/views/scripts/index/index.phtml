@@ -1,0 +1,70 @@
+<?php
+
+$this->headTitle('Test task');
+$this->headScript()->headScript()->prependFile('/media/js/app.js');
+$this->headScript()->headScript()->prependFile('/media/js/angular-cookies.min.js');
+$this->headScript()->headScript()->prependFile('/media/js/angular.min.js');
+$this->headScript()->headScript()->prependFile('/media/js/bootstrap.min.js');
+$this->headScript()->headScript()->prependFile('/media/js/jquery-2.1.4.min.js');
+$this->headLink()->appendStylesheet('/media/css/bootstrap.min.css');
+
+?>
+
+<html lang='en'>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <?php echo $this->headTitle(); ?>
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headScript(); ?>
+    </head>
+
+    <body>
+        <div ng-app='myApp'>
+            <div ng-controller='AppCtrl' ng-init='init()' class='container'>
+                <div class='alert alert-warning'  >
+                        Last update: {{lastDate|date:'yyyy/MM/dd HH:mm:ss'}}<br>
+                        Status: {{error}}
+                </div>
+
+                <div class='row'>
+
+                    <div  class='col-md-8'>
+                        <div class='row'>
+                            <div  class='col-md-5'>
+                                <select class='form-control' ng-model='form.selectedInactive' size='10' ng-options='option.code as option.name for option in listInactive'></select>
+                            </div>
+                            <div  class='col-md-2'>
+                                <br><br>
+                                <input class='btn btn-primary' type='button' value='Add >' ng-click='addToList()'/>
+                                <br><br>
+                                <input class='btn btn-primary' type='button' value='< Delete' ng-click='deleteFromList()'/>
+                            </div>
+                            <div class='col-md-5'>
+                                <select class='form-control' ng-model='form.selectedActive' size='10' ng-options='option.code as option.name for option in listActive'></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='col-md-4'>
+                        <div >
+                            <table class='table'>
+                                <thead>
+                                <th>Code</th><th>Name</th><th>Rate</th>
+                                </thead>
+                                <tr ng-repeat='rate in rates'>
+                                    <td>{{ rate.code }}</td>
+                                    <td>{{ rate.name }}</td>
+                                    <td>{{ rate.value }}</td>
+                                </tr>
+                            </table>
+
+                            <input class='btn btn-info' type='button' value='Refresh' ng-click='getList()'/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
