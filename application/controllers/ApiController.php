@@ -25,8 +25,8 @@ class ApiController extends Zend_Controller_Action
 
             if (count($result) == 0) {
                 //get data from service
-                $rates = new Application_Model_Rates();
-                $result = $rates->getRates();
+                $rates = new Application_Model_ExchangeRatesCbr();
+                $result = $rates->getExchangeRates();
                 //save results to db
                 $list->saveList($result);
             }

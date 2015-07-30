@@ -1,12 +1,12 @@
 <?php
-class Application_Model_Rates extends Application_Model_RatesAbstract
+class Application_Model_ExchangeRatesCbr extends Application_Model_ExchangeRatesAbstract
 {
-    protected function getRatesData() {
+    protected function getExchangeRatesData() {
         $result = array();
 
         // current date
         $date = date('d/m/Y');
-        $link = 'http://www.cbr.ru/scripts/XML_daily.asp?date_req=$date';
+        $link = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=$date";
         //load html
         $fd = fopen($link, 'r');
         $text = "";
