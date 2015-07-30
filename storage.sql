@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50172
 File Encoding         : 65001
 
-Date: 2015-07-30 01:02:46
+Date: 2015-07-30 11:21:49
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,36 +30,36 @@ CREATE TABLE `list` (
 -- ----------------------------
 -- Records of list
 -- ----------------------------
-INSERT INTO `list` VALUES ('036', 'Австралийский доллар', '2015-07-29', '43.987');
-INSERT INTO `list` VALUES ('051', 'Армянских драмов', '2015-07-29', '12.5727');
-INSERT INTO `list` VALUES ('124', 'Канадский доллар', '2015-07-29', '46.2046');
-INSERT INTO `list` VALUES ('156', 'Китайских юаней', '2015-07-29', '96.987');
-INSERT INTO `list` VALUES ('203', 'Чешских крон', '2015-07-29', '24.6599');
-INSERT INTO `list` VALUES ('208', 'Датских крон', '2015-07-29', '89.3319');
-INSERT INTO `list` VALUES ('348', 'Венгерских форинтов', '2015-07-29', '21.5083');
-INSERT INTO `list` VALUES ('356', 'Индийских рупий', '2015-07-29', '94.0619');
-INSERT INTO `list` VALUES ('392', 'Японских иен', '2015-07-29', '48.7104');
-INSERT INTO `list` VALUES ('398', 'Казахстанских тенге', '2015-07-29', '32.1619');
-INSERT INTO `list` VALUES ('410', 'Вон Республики Корея', '2015-07-29', '51.6232');
-INSERT INTO `list` VALUES ('417', 'Киргизских сомов', '2015-07-29', '98.6965');
-INSERT INTO `list` VALUES ('498', 'Молдавских леев', '2015-07-29', '31.9063');
-INSERT INTO `list` VALUES ('578', 'Норвежских крон', '2015-07-29', '73.4347');
-INSERT INTO `list` VALUES ('702', 'Сингапурский доллар', '2015-07-29', '44.0453');
-INSERT INTO `list` VALUES ('710', 'Южноафриканских рэндов', '2015-07-29', '47.723');
-INSERT INTO `list` VALUES ('752', 'Шведских крон', '2015-07-29', '70.5841');
-INSERT INTO `list` VALUES ('756', 'Швейцарский франк', '2015-07-29', '62.4527');
-INSERT INTO `list` VALUES ('826', 'Фунт стерлингов Соединенного королевства', '2015-07-29', '93.5927');
-INSERT INTO `list` VALUES ('840', 'Доллар США', '2015-07-29', '60.2231');
-INSERT INTO `list` VALUES ('860', 'Узбекских сумов', '2015-07-29', '23.4058');
-INSERT INTO `list` VALUES ('934', 'Новый туркменский манат', '2015-07-29', '17.214');
-INSERT INTO `list` VALUES ('944', 'Азербайджанский манат', '2015-07-29', '57.339');
-INSERT INTO `list` VALUES ('946', 'Новый румынский лей', '2015-07-29', '15.0905');
-INSERT INTO `list` VALUES ('949', 'Турецкая лира', '2015-07-29', '21.7805');
-INSERT INTO `list` VALUES ('960', 'СДР (специальные права заимствования)', '2015-07-29', '84.2184');
-INSERT INTO `list` VALUES ('972', 'Таджикских сомони', '2015-07-29', '96.1339');
-INSERT INTO `list` VALUES ('974', 'Белорусских рублей', '2015-07-29', '39.6988');
-INSERT INTO `list` VALUES ('975', 'Болгарский лев', '2015-07-29', '34.0744');
-INSERT INTO `list` VALUES ('978', 'Евро', '2015-07-29', '66.6248');
-INSERT INTO `list` VALUES ('980', 'Украинских гривен', '2015-07-29', '27.2688');
-INSERT INTO `list` VALUES ('985', 'Польский злотый', '2015-07-29', '16.166');
-INSERT INTO `list` VALUES ('986', 'Бразильский реал', '2015-07-29', '17.9107');
+INSERT INTO `list` VALUES ('AMD', 'Армянских драмов', '2015-07-30', '12.5297');
+INSERT INTO `list` VALUES ('AUD', 'Австралийский доллар', '2015-07-30', '43.6953');
+INSERT INTO `list` VALUES ('AZN', 'Азербайджанский манат', '2015-07-30', '56.9856');
+INSERT INTO `list` VALUES ('BGN', 'Болгарский лев', '2015-07-30', '33.7931');
+INSERT INTO `list` VALUES ('BRL', 'Бразильский реал', '2015-07-30', '17.7607');
+INSERT INTO `list` VALUES ('BYR', 'Белорусских рублей', '2015-07-30', '39.346');
+INSERT INTO `list` VALUES ('CAD', 'Канадский доллар', '2015-07-30', '46.1304');
+INSERT INTO `list` VALUES ('CHF', 'Швейцарский франк', '2015-07-30', '62.0628');
+INSERT INTO `list` VALUES ('CNY', 'Китайских юаней', '2015-07-30', '96.2579');
+INSERT INTO `list` VALUES ('CZK', 'Чешских крон', '2015-07-30', '24.4574');
+INSERT INTO `list` VALUES ('DKK', 'Датских крон', '2015-07-30', '88.581');
+INSERT INTO `list` VALUES ('EUR', 'Евро', '2015-07-30', '65.9882');
+INSERT INTO `list` VALUES ('GBP', 'Фунт стерлингов Соединенного королевства', '2015-07-30', '93.3134');
+INSERT INTO `list` VALUES ('HUF', 'Венгерских форинтов', '2015-07-30', '21.349');
+INSERT INTO `list` VALUES ('INR', 'Индийских рупий', '2015-07-30', '93.502');
+INSERT INTO `list` VALUES ('JPY', 'Японских иен', '2015-07-30', '48.345');
+INSERT INTO `list` VALUES ('KGS', 'Киргизских сомов', '2015-07-30', '98.0851');
+INSERT INTO `list` VALUES ('KRW', 'Вон Республики Корея', '2015-07-30', '51.5246');
+INSERT INTO `list` VALUES ('KZT', 'Казахстанских тенге', '2015-07-30', '31.8891');
+INSERT INTO `list` VALUES ('MDL', 'Молдавских леев', '2015-07-30', '31.7653');
+INSERT INTO `list` VALUES ('NOK', 'Норвежских крон', '2015-07-30', '73.3295');
+INSERT INTO `list` VALUES ('PLN', 'Польский злотый', '2015-07-30', '15.9885');
+INSERT INTO `list` VALUES ('RON', 'Новый румынский лей', '2015-07-30', '14.9555');
+INSERT INTO `list` VALUES ('SEK', 'Шведских крон', '2015-07-30', '69.7034');
+INSERT INTO `list` VALUES ('SGD', 'Сингапурский доллар', '2015-07-30', '43.7689');
+INSERT INTO `list` VALUES ('TJS', 'Таджикских сомони', '2015-07-30', '95.4736');
+INSERT INTO `list` VALUES ('TMT', 'Новый туркменский манат', '2015-07-30', '17.0883');
+INSERT INTO `list` VALUES ('TRY', 'Турецкая лира', '2015-07-30', '21.5958');
+INSERT INTO `list` VALUES ('UAH', 'Украинских гривен', '2015-07-30', '27.105');
+INSERT INTO `list` VALUES ('USD', 'Доллар США', '2015-07-30', '59.7665');
+INSERT INTO `list` VALUES ('UZS', 'Узбекских сумов', '2015-07-30', '23.2103');
+INSERT INTO `list` VALUES ('XDR', 'СДР (специальные права заимствования)', '2015-07-30', '83.5165');
+INSERT INTO `list` VALUES ('ZAR', 'Южноафриканских рэндов', '2015-07-30', '47.5288');

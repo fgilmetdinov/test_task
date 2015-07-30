@@ -12,10 +12,11 @@ myApp.controller('AppCtrl', ['$scope', '$http', '$interval', '$filter', '$cookie
 
         $scope.init = function () {
             // Retrieving a cookie
-            var codesCookie = $cookies.codes;
+            var codesCookie = $cookies.currencies;
             if (typeof codesCookie == 'undefined') {
-                codesCookie = '840,978,974,980';
-                $cookies.codes = codesCookie;
+                //codesCookie = '840,978,974,980';
+                codesCookie = "EUR,USD,BYR,UAH";
+                $cookies.currencies = codesCookie;
             }
             $scope.codes = codesCookie.split(",");
 
@@ -155,7 +156,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', '$interval', '$filter', '$cookie
             for(var i = 0; i < $scope.listActive.length; i++) {
                 $scope.codes.push($scope.listActive[i]["code"]);
             }
-            $cookies.codes = $scope.codes.join(",");
+            $cookies.currencies = $scope.codes.join(",");
         }
     }
 ]);
